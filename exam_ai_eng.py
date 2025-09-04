@@ -72,7 +72,7 @@ while True:
     
     try:
         user = int(age)
-        if age >= 18:
+        if user >= 18:
             print("You can vote")
             continue
         else:
