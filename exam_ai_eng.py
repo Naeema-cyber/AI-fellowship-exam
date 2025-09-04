@@ -18,13 +18,15 @@ def divide(a , b):
 try:
     while True:
         choice = input("Select an operation(+, -, *, /) or exit to quit:")
-        num1 = int(input("Enter a number: "))
-        num2 = int(input("Enter another number: "))
         if choice == "exit":
             print("Exiting the app")
             break
+        else:
+
+            num1 = int(input("Enter a number: "))
+            num2 = int(input("Enter another number: "))
     
-        elif choice == "+":
+        if choice == "+":
             print("Result: ", add(num1, num2))
         elif choice == "-":
             print("Result: ", subtract(num1, num2))
