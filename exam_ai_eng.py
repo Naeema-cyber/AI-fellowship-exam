@@ -15,9 +15,8 @@ def divide(a , b):
     else:
         print("Number cannot be zero")
 
-
-while True:
-    try:
+try:
+    while True:
         choice = input("Select an operation(+, -, *, /) or exit to quit:")
         num1 = int(input("Enter a number: "))
         num2 = int(input("Enter another number: "))
@@ -35,11 +34,11 @@ while True:
             print("Result: ", divide(num1, num2))
         else:
             print("Invalid input. Please try again")
-    except ValueError as e:
-        print("Invalid choice")
     else:
         print("Invalid input")
-    finally:
+except ValueError as e:
+        print("Invalid choice")
+finally:
         print("Continue your program")
             
 
